@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MenuBase />
+  <CalcBase />
+  <FooterBase />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CalcBase from './components/CalcBase.vue';
+import MenuBase from './components/MenuBase.vue';
+import FooterBase from './components/FooterBase.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CalcBase,
+    MenuBase,
+    FooterBase
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
