@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #4bb483;
+    --white: #eee;
+    --text: #000;
+    --light-green: #81e2b5;
+    --light-text: #69a187;
+    --dark-green: #448a69;
+    --gray: #2b3947;
+    --light-grey: darkslategray;
+    --green2: green;
+}
+
+body.dark {
+    --white: #222426;
+    --text: #eee;
+    --light-green: #1b7556;
+    --light-text: #9ddbbe;
+    --dark-green: #0a3b24;
+    --gray: #171c22;
+    --light-grey: rgb(16, 26, 26);
+    --green2: darkgreen;
+}
+
+nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    height: 10vh;
+    color: var(--text)
+}
+nav .logo img {
+    width: 2rem;
+}
+
+nav .title {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+main {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--light-green);
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 20rem;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) .3rem .3rem 2.6px;
+}
+
+.calculator .screen {
+  border-radius: .5rem .5rem 0 0;
+  text-align: right;
+  display: block;
+  background-color: var(--white);
+  widows: 100%;
+  height: 35%;
+  padding: .5rem;
+}
+
+.calculator .screen p {
+  margin: 0;
+  padding: .6rem .3;
+}
+.calculator .screen .history {
+  margin-bottom: .3rem;
+
+}
+.calculator .screen .value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: .3rem;
+}
+
+.group-button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1px;
+}
+
+.group-button .btn {
+  border: none;
+  padding: .5rem .7rem;
+  cursor: pointer;
+  background-color: var(--green);
+  color: #fff;
+}
+
+.pluss {
+  border-radius: 0 0 .5rem 0;
+}
+
+.p {
+  border-radius: 0 0 0 .5rem;
+}
+
+.group-button .btn:hover {
+    background-color: var(--dark-green);
+}
+
+.group-button .ac {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.group-button .del {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+
+.group-button .ac,
+.group-button .del,
+.group-button .operation {
+  background-color: var(--gray);
+}
+
+.group-button .equal:hover,
+.group-button .operation:hover {
+  background-color: var(--gray);
+}
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background-color: var(--white);
+    height: 8vh;
+}
+p {
+    margin-top: .5rem;
+    color: var(--light-text);
+}
+
+p span {
+    color: var(--green2);
+    font-weight: bold;
+}
+
+.icons div {
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    width: 4.5rem;
+    line-height: 4.4rem;
+    background-color: var(--light-bg);
+    text-align: center;
+    margin-left: 0.5rem;
+  }
